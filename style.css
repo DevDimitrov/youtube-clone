@@ -108,9 +108,64 @@ header {
 .sidebar .menu-item {
   padding: 8px;
   margin: 1%;
-  text-transform: none;
 }
 .sidebar i {
   font-size: 22px;
   width: 40px;
+  padding: 10px;
+}
+
+.sidebar .menu-item:hover {
+  background-color: #d4d4d4;
+  cursor: pointer;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #d4d4d4;
+  margin: 15px 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb;
+  border-radius: 10px;
+}
+
+.resize-sidebar {
+  width: 5%;
+}
+
+/* Content */
+
+.videos-container {
+  padding-left: 16%;
+  padding-right: 1%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.all-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 15px;
+  grid-row-gap: 30px;
+  margin-top: 10px;
+}
+
+.single-video .thumb {
+  width: 100%;
+  border-radius: 2%;
+}
+
+.single-video .flex-box img {
+  border-radius: 50%;
+  width: 35px;
+  margin-right: 10px;
+  margin-left: 5px;
 }
